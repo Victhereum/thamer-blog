@@ -12,8 +12,9 @@ class CategoryAdmin(TranslatableModelAdmin):
     readonly_fields = ["slug"]
 
 
-# admin.site.register(Post)
-admin.site.register(Post)
+@admin.register(Post)
+class PostAdmin(TranslatableModelAdmin):
+    list_display = ["category", "author","languages_column", "title", "content", "media"]
 
 
 # admin.site.register(Comment
