@@ -8,7 +8,7 @@ from import_export.admin import ImportExportModelAdmin
 
 @admin.register(Category)
 class CategoryAdmin(TranslatableModelAdmin):
-    list_display = ["title", "slug"]
+    list_display = ["title",]
     readonly_fields = ["slug"]
 
 
