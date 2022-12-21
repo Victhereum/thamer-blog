@@ -14,7 +14,7 @@ class CategoryAdmin(TranslatableModelAdmin):
 
 @admin.register(Post)
 class PostAdmin(TranslatableModelAdmin):
-    list_display = ["category", "author","languages_column", "title", "content", "media"]
+    list_display = ["category", "author", "title", "media"]
 
 
 # admin.site.register(Comment
