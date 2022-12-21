@@ -35,7 +35,7 @@ def about(request):
 @xframe_options_exempt
 def post_detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    comments = post.comments.filter(translations__active=True)     # if you want to make comment filter change .all() to = .filter(active=True)
+    comments = Comment.objects.filter(post_id=post.id)     # if you want to make comment filter change .all() to = .filter(active=True)
 
     # check before save data from comment form
     if request.method == 'POST':
@@ -116,7 +116,7 @@ def search(request):
     q = request.GET.get('q')
 
     if q:
-        posts = Post.objects.filter(Q(translations__title__icontains=q)|Q(content__icontains=q)).order_by('-id')
+        posts = Post.objects.filter(Q(title__icontains=q)|Q(content__icontains=q)).order_by('-id')
 
     paginator = Paginator(posts, 5)
     page = request.GET.get('page')
