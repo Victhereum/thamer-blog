@@ -1,0 +1,13 @@
+{% load i18n %}
+<ul class="list-group-flush latest-post">
+    {% for category in l_categories %}
+    <li class="border-bottom list-group-item limit latest-post-item text-center">
+        <a class="text-dark " href="{{ category.get_absolute_url }}">{{category.title}}</a>
+    </li>
+    {% empty %}
+    <li class="list-group-item latest-post-item">{% translate "No categories yet." %}</li>
+    {% endfor %}
+    <ul class="text-center p-2 mt-2">
+    	<a class="text-dark" href="{% url 'categories' %}">{% translate "View all categories" %}</a>
+    </ul>
+</ul>

@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}\
+{% load i18n %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="border p-4 mb-5">
+    <legend class="border-bottom pb-1 mb-3">{% translate "Delete post" %}</legend>
+    <form method="POST">
+        <legend class="pb-1 mb-3 mt-4">
+        Are you sure you want to delete "{{object.title}}" ?
+        </legend>
+        {% csrf_token %}
+        <input class="btn btn-danger mt-3" type="submit" value="{% translate "delete" %}">
+        <a class="btn btn-secondary mt-3 back-btn" href="{% url 'detail' object.id %}">{% translate "Cancel" %}</a>
+    </form>
+</div>
+{% endblock content %}

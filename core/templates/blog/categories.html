@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+{% block content %}
+<div class="container mt-4">
+
+    {# List all categories #}
+    {% if categories %}
+    <h2 class="mb-5">{% trans "All categories" %}</h2>
+        <div class="row">
+            {% for category in categories %}
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="card mb-3 text-center" style="max-width: 18rem;">
+                        <a class="card-header text-dark card-custom" href="{% url 'category' category.slug %}" style="text-decoration: none;" >
+                           <strong> {{ category.title }} </strong>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+
+</div>
+   
+{% endblock %}

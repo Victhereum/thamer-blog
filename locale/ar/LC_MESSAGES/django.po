@@ -1,0 +1,416 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-20 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: blog/settings.py:131
+msgid "English"
+msgstr ""
+
+#: blog/settings.py:132
+msgid "Arabic"
+msgstr ""
+
+#: blog/urls.py:26
+msgid "admin/"
+msgstr ""
+
+#: core/forms.py:7
+msgid "Name"
+msgstr ""
+
+#: core/forms.py:8
+msgid "Email"
+msgstr ""
+
+#: core/forms.py:9
+msgid "Your Comment"
+msgstr ""
+
+#: core/forms.py:17
+msgid "Post title"
+msgstr ""
+
+#: core/forms.py:18
+msgid "Post content"
+msgstr ""
+
+#: core/forms.py:19
+msgid "Media File"
+msgstr ""
+
+#: core/forms.py:20 core/templates/blog/category.html:11
+msgid "Category"
+msgstr ""
+
+#: core/forms.py:32
+msgid "Category title"
+msgstr ""
+
+#: core/models.py:24
+msgid "slug"
+msgstr ""
+
+#: core/models.py:27 core/models.py:69
+msgid "name"
+msgstr ""
+
+#: core/models.py:44
+msgid "category"
+msgstr ""
+
+#: core/models.py:45
+msgid "author"
+msgstr ""
+
+#: core/models.py:46
+msgid "hit_count_generic"
+msgstr ""
+
+#: core/models.py:47
+msgid "media"
+msgstr ""
+
+#: core/models.py:48
+msgid "post date"
+msgstr ""
+
+#: core/models.py:51
+msgid "title"
+msgstr ""
+
+#: core/models.py:52
+msgid "content"
+msgstr ""
+
+#: core/models.py:53
+msgid "post update"
+msgstr ""
+
+#: core/models.py:69 core/models.py:70
+msgid "Your email"
+msgstr ""
+
+#: core/models.py:70
+msgid "email"
+msgstr ""
+
+#: core/models.py:71
+msgid "body"
+msgstr ""
+
+#: core/models.py:71
+msgid "Your comment"
+msgstr ""
+
+#: core/templates/blog/about.html:5 core/templates/blog/base.html:41
+#: core/templates/blog/base.html:108
+msgid "About me"
+msgstr ""
+
+#: core/templates/blog/base.html:27
+msgid "Blog"
+msgstr ""
+
+#: core/templates/blog/base.html:34
+msgid "Home"
+msgstr ""
+
+#: core/templates/blog/base.html:38 core/templates/blog/base.html:81
+msgid "Categories"
+msgstr ""
+
+#: core/templates/blog/base.html:49
+msgid "search"
+msgstr ""
+
+#: core/templates/blog/base.html:55
+msgid "New blog"
+msgstr ""
+
+#: core/templates/blog/base.html:56 core/templates/blog/new_category.html:7
+msgid "New category"
+msgstr ""
+
+#: core/templates/blog/base.html:57
+msgid "Control panel"
+msgstr ""
+
+#: core/templates/blog/base.html:58
+msgid "Logout"
+msgstr ""
+
+#: core/templates/blog/base.html:62 user/templates/user/login.html:5
+#: user/templates/user/login.html:23
+msgid "Login"
+msgstr ""
+
+#: core/templates/blog/base.html:85
+msgid "Latest posts"
+msgstr ""
+
+#: core/templates/blog/base.html:89
+msgid "Latest comments"
+msgstr ""
+
+#: core/templates/blog/base.html:111
+msgid "Blog logo"
+msgstr ""
+
+#: core/templates/blog/base.html:117
+msgid "Important links"
+msgstr ""
+
+#: core/templates/blog/base.html:120
+msgid "First link"
+msgstr ""
+
+#: core/templates/blog/base.html:121
+msgid "Second link"
+msgstr ""
+
+#: core/templates/blog/base.html:122
+msgid "Third link"
+msgstr ""
+
+#: core/templates/blog/base.html:123
+msgid "Fourth link"
+msgstr ""
+
+#: core/templates/blog/base.html:124
+msgid "Fifth link"
+msgstr ""
+
+#: core/templates/blog/base.html:129
+msgid "Socials"
+msgstr ""
+
+#: core/templates/blog/base.html:144
+msgid "All rights reserved"
+msgstr ""
+
+#: core/templates/blog/categories.html:8
+msgid "All categories"
+msgstr ""
+
+#: core/templates/blog/category.html:11 core/templates/blog/category.html:33
+msgid "Category - "
+msgstr ""
+
+#: core/templates/blog/category.html:19 core/templates/blog/detail.html:21
+#: core/templates/blog/index.html:21 core/templates/blog/search.html:23
+msgid "Posted on: "
+msgstr ""
+
+#: core/templates/blog/category.html:22 core/templates/blog/detail.html:25
+msgid "Views:"
+msgstr ""
+
+#: core/templates/blog/category.html:27 core/templates/blog/index.html:32
+#: core/templates/blog/search.html:36
+msgid "More"
+msgstr ""
+
+#: core/templates/blog/category.html:35
+msgid "No posts in this category."
+msgstr ""
+
+#: core/templates/blog/detail.html:31 user/templates/user/profile.html:19
+#: user/templates/user/profile_update.html:19
+msgid "Edit"
+msgstr ""
+
+#: core/templates/blog/detail.html:32 core/templates/blog/detail.html:60
+msgid "Delete"
+msgstr ""
+
+#: core/templates/blog/detail.html:44 core/templates/blog/index.html:33
+#: core/templates/blog/search.html:37
+msgid "Category: "
+msgstr ""
+
+#: core/templates/blog/detail.html:53
+msgid "Comments"
+msgstr ""
+
+#: core/templates/blog/detail.html:80
+msgid "There are no comments"
+msgstr ""
+
+#: core/templates/blog/detail.html:84
+msgid "New comment"
+msgstr ""
+
+#: core/templates/blog/index.html:17 core/templates/blog/search.html:19
+msgid "Profile picture"
+msgstr ""
+
+#: core/templates/blog/index.html:25 core/templates/blog/search.html:27
+msgid "Views: "
+msgstr ""
+
+#: core/templates/blog/index.html:39
+msgid "There are no blog posts here. Please "
+msgstr ""
+
+#: core/templates/blog/index.html:39
+msgid "login"
+msgstr ""
+
+#: core/templates/blog/index.html:39
+msgid "to post something."
+msgstr ""
+
+#: core/templates/blog/l_categories.html:8
+msgid "No categories yet."
+msgstr ""
+
+#: core/templates/blog/l_categories.html:11
+msgid "View all categories"
+msgstr ""
+
+#: core/templates/blog/latest_comments.html:15
+msgid "There are no comments yet."
+msgstr ""
+
+#: core/templates/blog/latest_posts.html:10
+msgid "No posts yet."
+msgstr ""
+
+#: core/templates/blog/new_post.html:7
+msgid "New post"
+msgstr ""
+
+#: core/templates/blog/pagination.html:5 core/templates/blog/pagination.html:7
+msgid "Previous"
+msgstr ""
+
+#: core/templates/blog/pagination.html:15
+#: core/templates/blog/pagination.html:17
+msgid "Next"
+msgstr ""
+
+#: core/templates/blog/post_confirm_delete.html:7
+msgid "Delete post"
+msgstr ""
+
+#: core/templates/blog/post_confirm_delete.html:13
+#: user/templates/user/profile.html:69
+msgid "delete"
+msgstr ""
+
+#: core/templates/blog/post_confirm_delete.html:14
+msgid "Cancel"
+msgstr ""
+
+#: core/templates/blog/post_update.html:7
+msgid "Edit post"
+msgstr ""
+
+#: core/templates/blog/post_update.html:11
+msgid "Submit"
+msgstr ""
+
+#: core/templates/blog/search.html:14
+msgid "Search results for: "
+msgstr ""
+
+#: core/templates/blog/search.html:43
+msgid "There are no blog posts matching your search results."
+msgstr ""
+
+#: user/models.py:9
+msgid "image"
+msgstr ""
+
+#: user/models.py:10
+msgid "user"
+msgstr ""
+
+#: user/templates/user/login.html:16
+msgid "Username"
+msgstr ""
+
+#: user/templates/user/login.html:17
+msgid "Please enter username"
+msgstr ""
+
+#: user/templates/user/login.html:20 user/templates/user/login.html:21
+msgid "Password"
+msgstr ""
+
+#: user/templates/user/logout.html:7
+msgid "Logout successful"
+msgstr ""
+
+#: user/templates/user/logout.html:8
+msgid "Login again"
+msgstr ""
+
+#: user/templates/user/profile.html:24
+msgid "Name: "
+msgstr ""
+
+#: user/templates/user/profile.html:26
+msgid "Email: "
+msgstr ""
+
+#: user/templates/user/profile.html:33
+msgid "Number of blogs"
+msgstr ""
+
+#: user/templates/user/profile.html:38
+msgid "blogs"
+msgstr ""
+
+#: user/templates/user/profile.html:46
+msgid "No blogs"
+msgstr ""
+
+#: user/templates/user/profile.html:58
+msgid "Pending comments"
+msgstr ""
+
+#: user/templates/user/profile.html:63
+msgid "comments"
+msgstr ""
+
+#: user/templates/user/profile.html:78
+msgid "Accept"
+msgstr ""
+
+#: user/templates/user/profile.html:89
+msgid "No comments"
+msgstr ""
+
+#: user/templates/user/profile_update.html:7
+msgid "Personal profile update"
+msgstr ""
+
+#: user/templates/user/profile_update.html:13
+msgid "Profile picture "
+msgstr ""
+
+#: user/templates/user/profile_update.html:14
+msgid "Profile picture: "
+msgstr ""
+
+#: user/templates/user/profile_update.html:16
+msgid "Choose picture"
+msgstr ""
