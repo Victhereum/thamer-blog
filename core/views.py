@@ -1,6 +1,6 @@
 
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, Comment, Category
+from .models import Post, Comment, Category, LanguagesChoices
 from .forms import NewComment, PostCreateForm, CategoryCreateForm
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.views.generic import CreateView, UpdateView, DeleteView
@@ -35,18 +35,37 @@ def about(request):
 @xframe_options_exempt
 def post_detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    comments = Comment.objects.filter(post_id=post.id)     # if you want to make comment filter change .all() to = .filter(active=True)
+    comments = Comment.objects.filter(post_id=post.id)
+    print(post)
 
     # check before save data from comment form
     if request.method == 'POST':
-        comment_form = NewComment(data=request.POST)
-        if comment_form.is_valid():
-            new_comment = comment_form.save(commit=False)
-            new_comment.post = post
-            new_comment.save()
-            # Deprecated line to prevent form to post data when refresh a page
-            # comment_form = NewComment()
-            return redirect('detail', post_id)
+        if request.POST.get("lang") == "en":
+            name = request.POST.get("name_en")
+            email = request.POST.get("email")
+            body = request.POST.get("body_en")
+
+            Comment.objects.create(
+                post_id=post.id,
+                name=name,
+                email=email,
+                body=body,
+                lang=LanguagesChoices.English
+            )
+        else:
+            name = request.POST.get("name_ar")
+            email = request.POST.get("email")
+            body = request.POST.get("body_ar")
+
+            Comment.objects.create(
+                post_id=post.id,
+                name=name,
+                email=email,
+                body=body,
+                lang=LanguagesChoices.Arabic
+            )
+
+        return redirect('detail', post_id)
     else:
         comment_form = NewComment()
 

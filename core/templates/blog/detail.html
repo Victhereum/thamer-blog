@@ -82,11 +82,98 @@
 
 <!-- Comment Form -->
 <h3 class="border-bottom pb-3 mb-3 mt-5">{% translate "New comment" %}</h3>
+{% get_current_language as CURRENT_LANGUAGE %}
+{% if CURRENT_LANGUAGE == "en" %}
 <div class="border p-4 mb-5 mt-4">
-    <form method="POST">
+    <form method="POST" action="{% url 'detail' post.id %}">
         {% csrf_token %}
-        {{comment_form|crispy}}
+        <input type="hidden" name="post_id" value="{{ post.id }}">
+        <input type="hidden" name="lang" value="en">
+        <div id="div_id_name_en" class="mb-3">
+            <label for="id_name_en" class="form-label requiredField">
+              Name<span class="asteriskField">*</span>
+            </label>
+            <input
+              type="text"
+              name="name_en"
+              class="textinput textInput form-control"
+              required=""
+              id="id_name_en"
+            />
+          </div>
+          <div id="div_id_email" class="mb-3">
+            <label for="id_email" class="form-label requiredField">
+              Email<span class="asteriskField">*</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              class="emailinput form-control"
+              required=""
+              id="id_email"
+            />
+          </div>
+          <div id="div_id_body_en" class="mb-3">
+            <label for="id_body_en" class="form-label requiredField">
+              Your Comment<span class="asteriskField">*</span>
+            </label>
+            <textarea
+              name="body_en"
+              cols="40"
+              rows="10"
+              class="textarea form-control"
+              required=""
+              id="id_body_en"
+            ></textarea>
+          </div>      
         <input class="btn btn-secondary" type="submit" value="Submit">
     </form>
 </div>
+{% else %}
+<div class="border p-4 mb-5 mt-4">
+    <form method="POST" action="{% url 'detail' post.id %}">
+        {% csrf_token %}
+        <input type="hidden" name="post_id" value="{{ post.id }}">
+        <input type="hidden" name="lang" value="ar">
+        <div id="div_id_name_ar" class="mb-3">
+            <label for="id_name_ar" class="form-label requiredField">
+              Name<span class="asteriskField">*</span>
+            </label>
+            <input
+              type="text"
+              name="name_ar"
+              class="textinput textInput form-control"
+              required=""
+              id="id_name_ar"
+            />
+          </div>
+          <div id="div_id_email" class="mb-3">
+            <label for="id_email" class="form-label requiredField">
+              Email<span class="asteriskField">*</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              class="emailinput form-control"
+              required=""
+              id="id_email"
+            />
+          </div>
+          <div id="div_id_body_ar" class="mb-3">
+            <label for="id_body_ar" class="form-label requiredField">
+              Your Comment<span class="asteriskField">*</span>
+            </label>
+            <textarea
+              name="body_ar"
+              cols="40"
+              rows="10"
+              class="textarea form-control"
+              required=""
+              id="id_body_ar"
+            ></textarea>
+          </div>      
+        <input class="btn btn-secondary" type="submit" value="Submit">
+    </form>
+</div>
+{% endif %}
 {% endblock content %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-20 23:45+0100\n"
+"POT-Creation-Date: 2022-12-24 04:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,398 +19,440 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: blog/settings.py:131
+#: blog/settings.py:130 core/models.py:21
 msgid "English"
-msgstr ""
+msgstr "إنجليزي"
 
-#: blog/settings.py:132
+#: blog/settings.py:131 core/models.py:22
 msgid "Arabic"
-msgstr ""
+msgstr "عربي"
 
 #: blog/urls.py:26
 msgid "admin/"
-msgstr ""
+msgstr "مشرف/"
 
 #: core/forms.py:7
 msgid "Name"
-msgstr ""
+msgstr "اسم"
 
 #: core/forms.py:8
 msgid "Email"
-msgstr ""
+msgstr "بريد إلكتروني"
 
 #: core/forms.py:9
 msgid "Your Comment"
-msgstr ""
+msgstr "تعليقك"
 
 #: core/forms.py:17
 msgid "Post title"
-msgstr ""
+msgstr "عنوان ما بعد"
 
 #: core/forms.py:18
 msgid "Post content"
-msgstr ""
+msgstr "آخر المحتوى"
 
 #: core/forms.py:19
 msgid "Media File"
-msgstr ""
+msgstr "ملف وسائط"
 
 #: core/forms.py:20 core/templates/blog/category.html:11
 msgid "Category"
-msgstr ""
+msgstr "فئة"
 
 #: core/forms.py:32
 msgid "Category title"
-msgstr ""
+msgstr "عنوان الفئة"
 
-#: core/models.py:24
+#: core/models.py:34
 msgid "slug"
-msgstr ""
+msgstr "سبيكة"
 
-#: core/models.py:27 core/models.py:69
+#: core/models.py:35 core/models.py:100
 msgid "name"
-msgstr ""
+msgstr "اسم"
 
-#: core/models.py:44
+#: core/models.py:40 core/models.py:64
 msgid "category"
-msgstr ""
+msgstr "الفئة"
 
-#: core/models.py:45
+#: core/models.py:41
+#, fuzzy
+#| msgid "Categories"
+msgid "categories"
+msgstr "التصنيفات"
+
+#: core/models.py:65
 msgid "author"
-msgstr ""
+msgstr "مؤلف"
 
-#: core/models.py:46
+#: core/models.py:66
 msgid "hit_count_generic"
-msgstr ""
+msgstr "HIT_COUNT_GENERIC"
 
-#: core/models.py:47
+#: core/models.py:67
 msgid "media"
-msgstr ""
+msgstr "وسائل الإعلام"
 
-#: core/models.py:48
-msgid "post date"
-msgstr ""
-
-#: core/models.py:51
+#: core/models.py:68
 msgid "title"
-msgstr ""
+msgstr "لقب"
 
-#: core/models.py:52
+#: core/models.py:69
 msgid "content"
-msgstr ""
+msgstr "المحتوى"
 
-#: core/models.py:53
+#: core/models.py:72
+msgid "post date"
+msgstr "تاريخ آخر"
+
+#: core/models.py:73
 msgid "post update"
+msgstr "تحديث منشور"
+
+#: core/models.py:79
+msgid "Post"
 msgstr ""
 
-#: core/models.py:69 core/models.py:70
-msgid "Your email"
-msgstr ""
+#: core/models.py:80
+#, fuzzy
+#| msgid "New post"
+msgid "posts"
+msgstr "منشور جديد"
 
-#: core/models.py:70
+#: core/models.py:100
+#, fuzzy
+#| msgid "Your Comment"
+msgid "Your name"
+msgstr "تعليقك"
+
+#: core/models.py:101
 msgid "email"
-msgstr ""
+msgstr "البريد الإلكتروني"
 
-#: core/models.py:71
+#: core/models.py:101
+msgid "Your email"
+msgstr "بريدك الالكتروني"
+
+#: core/models.py:102
 msgid "body"
-msgstr ""
+msgstr "الجسم"
 
-#: core/models.py:71
+#: core/models.py:102
 msgid "Your comment"
-msgstr ""
+msgstr "تعليقك"
 
-#: core/templates/blog/about.html:5 core/templates/blog/base.html:41
-#: core/templates/blog/base.html:108
+#: core/templates/blog/about.html:5 core/templates/blog/base.html:46
+#: core/templates/blog/base.html:130
 msgid "About me"
-msgstr ""
+msgstr "ْعَنِّي"
 
-#: core/templates/blog/base.html:27
+#: core/templates/blog/base.html:32
 msgid "Blog"
-msgstr ""
+msgstr "مدونة او مذكرة"
 
-#: core/templates/blog/base.html:34
+#: core/templates/blog/base.html:39
 msgid "Home"
-msgstr ""
+msgstr "بيت"
 
-#: core/templates/blog/base.html:38 core/templates/blog/base.html:81
+#: core/templates/blog/base.html:43 core/templates/blog/base.html:103
 msgid "Categories"
-msgstr ""
+msgstr "التصنيفات"
 
-#: core/templates/blog/base.html:49
+#: core/templates/blog/base.html:54
 msgid "search"
+msgstr "بحث"
+
+#: core/templates/blog/base.html:64
+msgid "Languages"
 msgstr ""
 
-#: core/templates/blog/base.html:55
+#: core/templates/blog/base.html:77
 msgid "New blog"
-msgstr ""
+msgstr "مدونة جديدة"
 
-#: core/templates/blog/base.html:56 core/templates/blog/new_category.html:7
+#: core/templates/blog/base.html:78 core/templates/blog/new_category.html:7
 msgid "New category"
-msgstr ""
+msgstr "فئة جديدة"
 
-#: core/templates/blog/base.html:57
+#: core/templates/blog/base.html:79
 msgid "Control panel"
-msgstr ""
+msgstr "لوحة التحكم"
 
-#: core/templates/blog/base.html:58
+#: core/templates/blog/base.html:80
 msgid "Logout"
-msgstr ""
+msgstr "تسجيل خروج"
 
-#: core/templates/blog/base.html:62 user/templates/user/login.html:5
+#: core/templates/blog/base.html:84 user/templates/user/login.html:5
 #: user/templates/user/login.html:23
 msgid "Login"
-msgstr ""
+msgstr "تسجيل الدخول"
 
-#: core/templates/blog/base.html:85
+#: core/templates/blog/base.html:107
 msgid "Latest posts"
-msgstr ""
-
-#: core/templates/blog/base.html:89
-msgid "Latest comments"
-msgstr ""
+msgstr "آخر المشاركات"
 
 #: core/templates/blog/base.html:111
+msgid "Latest comments"
+msgstr "أحدث تعليقات"
+
+#: core/templates/blog/base.html:133
 msgid "Blog logo"
-msgstr ""
+msgstr "شعار المدونة"
 
-#: core/templates/blog/base.html:117
+#: core/templates/blog/base.html:139
 msgid "Important links"
-msgstr ""
+msgstr "روابط مهمة"
 
-#: core/templates/blog/base.html:120
+#: core/templates/blog/base.html:142
 msgid "First link"
-msgstr ""
+msgstr "الرابط الأول"
 
-#: core/templates/blog/base.html:121
+#: core/templates/blog/base.html:143
 msgid "Second link"
-msgstr ""
-
-#: core/templates/blog/base.html:122
-msgid "Third link"
-msgstr ""
-
-#: core/templates/blog/base.html:123
-msgid "Fourth link"
-msgstr ""
-
-#: core/templates/blog/base.html:124
-msgid "Fifth link"
-msgstr ""
-
-#: core/templates/blog/base.html:129
-msgid "Socials"
-msgstr ""
+msgstr "الرابط الثاني"
 
 #: core/templates/blog/base.html:144
+msgid "Third link"
+msgstr "الرابط الثالث"
+
+#: core/templates/blog/base.html:145
+msgid "Fourth link"
+msgstr "الرابط الرابع"
+
+#: core/templates/blog/base.html:146
+msgid "Fifth link"
+msgstr "الرابط الخامس"
+
+#: core/templates/blog/base.html:151
+msgid "Socials"
+msgstr "الاجتماعية"
+
+#: core/templates/blog/base.html:166
 msgid "All rights reserved"
-msgstr ""
+msgstr "كل الحقوق محفوظة"
 
 #: core/templates/blog/categories.html:8
 msgid "All categories"
-msgstr ""
+msgstr "جميع الفئات"
 
 #: core/templates/blog/category.html:11 core/templates/blog/category.html:33
 msgid "Category - "
-msgstr ""
+msgstr "فئة -"
 
 #: core/templates/blog/category.html:19 core/templates/blog/detail.html:21
 #: core/templates/blog/index.html:21 core/templates/blog/search.html:23
 msgid "Posted on: "
-msgstr ""
+msgstr "نشر على:"
 
 #: core/templates/blog/category.html:22 core/templates/blog/detail.html:25
 msgid "Views:"
-msgstr ""
+msgstr "الآراء:"
 
 #: core/templates/blog/category.html:27 core/templates/blog/index.html:32
 #: core/templates/blog/search.html:36
 msgid "More"
-msgstr ""
+msgstr "أكثر"
 
 #: core/templates/blog/category.html:35
 msgid "No posts in this category."
-msgstr ""
+msgstr "لا يوجد تعليقات على الكاتالوج."
 
 #: core/templates/blog/detail.html:31 user/templates/user/profile.html:19
 #: user/templates/user/profile_update.html:19
 msgid "Edit"
-msgstr ""
+msgstr "تعديل"
 
 #: core/templates/blog/detail.html:32 core/templates/blog/detail.html:60
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: core/templates/blog/detail.html:44 core/templates/blog/index.html:33
 #: core/templates/blog/search.html:37
 msgid "Category: "
-msgstr ""
+msgstr "فئة:"
 
 #: core/templates/blog/detail.html:53
 msgid "Comments"
-msgstr ""
+msgstr "تعليقات"
 
 #: core/templates/blog/detail.html:80
 msgid "There are no comments"
-msgstr ""
+msgstr "لا توجد تعليقات"
 
 #: core/templates/blog/detail.html:84
 msgid "New comment"
-msgstr ""
+msgstr "تعليق جديد"
 
 #: core/templates/blog/index.html:17 core/templates/blog/search.html:19
 msgid "Profile picture"
-msgstr ""
+msgstr "الصوره الشخصيه"
 
 #: core/templates/blog/index.html:25 core/templates/blog/search.html:27
 msgid "Views: "
-msgstr ""
+msgstr "الآراء:"
 
 #: core/templates/blog/index.html:39
 msgid "There are no blog posts here. Please "
-msgstr ""
+msgstr "لا توجد منشورات مدونة هنا.رجاء"
 
 #: core/templates/blog/index.html:39
 msgid "login"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: core/templates/blog/index.html:39
 msgid "to post something."
-msgstr ""
+msgstr "لنشر شيء ما."
 
 #: core/templates/blog/l_categories.html:8
 msgid "No categories yet."
-msgstr ""
+msgstr "لا فئات حتى الآن."
 
 #: core/templates/blog/l_categories.html:11
 msgid "View all categories"
-msgstr ""
+msgstr "عرض جميع الفئات"
 
 #: core/templates/blog/latest_comments.html:15
 msgid "There are no comments yet."
-msgstr ""
+msgstr "لا توجد تعليقات حتى الآن."
 
 #: core/templates/blog/latest_posts.html:10
 msgid "No posts yet."
-msgstr ""
+msgstr "لا وظائف حتى الآن."
 
 #: core/templates/blog/new_post.html:7
 msgid "New post"
-msgstr ""
+msgstr "منشور جديد"
 
 #: core/templates/blog/pagination.html:5 core/templates/blog/pagination.html:7
 msgid "Previous"
-msgstr ""
+msgstr "سابق"
 
 #: core/templates/blog/pagination.html:15
 #: core/templates/blog/pagination.html:17
 msgid "Next"
-msgstr ""
+msgstr "التالي"
 
 #: core/templates/blog/post_confirm_delete.html:7
 msgid "Delete post"
-msgstr ""
+msgstr "حذف آخر"
 
 #: core/templates/blog/post_confirm_delete.html:13
 #: user/templates/user/profile.html:69
 msgid "delete"
-msgstr ""
+msgstr "حذف"
 
 #: core/templates/blog/post_confirm_delete.html:14
 msgid "Cancel"
-msgstr ""
+msgstr "يلغي"
 
 #: core/templates/blog/post_update.html:7
 msgid "Edit post"
-msgstr ""
+msgstr "تعديل المنشور"
 
 #: core/templates/blog/post_update.html:11
 msgid "Submit"
-msgstr ""
+msgstr "يُقدِّم"
 
 #: core/templates/blog/search.html:14
 msgid "Search results for: "
-msgstr ""
+msgstr "نتائج البحث عن:"
 
 #: core/templates/blog/search.html:43
 msgid "There are no blog posts matching your search results."
+msgstr "لا توجد منشورات مدونة تتطابق مع نتائج البحث."
+
+#: translate/translate/lang/test_data.py:37
+msgid "Bokmål, Norwegian; Norwegian Bokmål"
+msgstr ""
+
+#: translate/translate/lang/test_data.py:38
+msgid "Spanish; Castillian"
+msgstr ""
+
+#: translate/translate/lang/test_data.py:39
+msgid "Mapudungun; Mapuche"
+msgstr ""
+
+#: translate/translate/lang/test_data.py:41
+msgid "Interlingua (International Auxiliary Language Association)"
 msgstr ""
 
 #: user/models.py:9
 msgid "image"
-msgstr ""
+msgstr "صورة"
 
 #: user/models.py:10
 msgid "user"
-msgstr ""
+msgstr "المستعمل"
 
 #: user/templates/user/login.html:16
 msgid "Username"
-msgstr ""
+msgstr "اسم المستخدم"
 
 #: user/templates/user/login.html:17
 msgid "Please enter username"
-msgstr ""
+msgstr "الرجاء إدخال اسم المستخدم"
 
 #: user/templates/user/login.html:20 user/templates/user/login.html:21
 msgid "Password"
-msgstr ""
+msgstr "كلمة المرور"
 
 #: user/templates/user/logout.html:7
 msgid "Logout successful"
-msgstr ""
+msgstr "تسجيل الخروج ناجح"
 
 #: user/templates/user/logout.html:8
 msgid "Login again"
-msgstr ""
+msgstr "تسجيل الدخول مرة أخرى"
 
 #: user/templates/user/profile.html:24
 msgid "Name: "
-msgstr ""
+msgstr "اسم:"
 
 #: user/templates/user/profile.html:26
 msgid "Email: "
-msgstr ""
+msgstr "بريد إلكتروني:"
 
 #: user/templates/user/profile.html:33
 msgid "Number of blogs"
-msgstr ""
+msgstr "عدد المدونات"
 
 #: user/templates/user/profile.html:38
 msgid "blogs"
-msgstr ""
+msgstr "المدونات"
 
 #: user/templates/user/profile.html:46
 msgid "No blogs"
-msgstr ""
+msgstr "لا مدونات"
 
 #: user/templates/user/profile.html:58
 msgid "Pending comments"
-msgstr ""
+msgstr "تعليقات معلقة"
 
 #: user/templates/user/profile.html:63
 msgid "comments"
-msgstr ""
+msgstr "تعليقات"
 
 #: user/templates/user/profile.html:78
 msgid "Accept"
-msgstr ""
+msgstr "قبول"
 
 #: user/templates/user/profile.html:89
 msgid "No comments"
-msgstr ""
+msgstr "بدون تعليقات"
 
 #: user/templates/user/profile_update.html:7
 msgid "Personal profile update"
-msgstr ""
+msgstr "تحديث الملف الشخصي"
 
 #: user/templates/user/profile_update.html:13
 msgid "Profile picture "
-msgstr ""
+msgstr "الصوره الشخصيه"
 
 #: user/templates/user/profile_update.html:14
 msgid "Profile picture: "
-msgstr ""
+msgstr "الصوره الشخصيه:"
 
 #: user/templates/user/profile_update.html:16
 msgid "Choose picture"
-msgstr ""
+msgstr "اختر الصورة"

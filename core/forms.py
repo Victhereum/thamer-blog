@@ -4,13 +4,15 @@ from .models import Comment, Post, Category
 
 class NewComment(forms.ModelForm):
 
-    name = forms.CharField(label=_('Name'))
+    name_en = forms.CharField(label=_('Name'))
+    name_ar = forms.CharField(label=_('Name'))
     email = forms.EmailField(label=_('Email'))
-    body = forms.CharField(label=_('Your Comment'), widget=forms.Textarea)
+    body_en = forms.CharField(label=_('Your Comment'), widget=forms.Textarea)
+    body_ar = forms.CharField(label=_('Your Comment'), widget=forms.Textarea)
 
     class Meta:
         model = Comment
-        fields = ('name', 'email', 'body')
+        fields = ('name_en','name_ar', 'email', 'body_en', 'body_ar')
 
 
 class PostCreateForm(forms.ModelForm):

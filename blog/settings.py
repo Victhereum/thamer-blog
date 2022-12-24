@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'user',
     'rosetta',
     'linguist',
-    'autotranslate',
     'crispy_forms',
     'crispy_bootstrap5',
     'import_export',

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-20 23:45+0100\n"
+"POT-Creation-Date: 2022-12-24 04:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: blog/settings.py:131
+#: blog/settings.py:130 core/models.py:21
 msgid "English"
 msgstr ""
 
-#: blog/settings.py:132
+#: blog/settings.py:131 core/models.py:22
 msgid "Arabic"
 msgstr ""
 
@@ -62,145 +62,165 @@ msgstr ""
 msgid "Category title"
 msgstr ""
 
-#: core/models.py:24
+#: core/models.py:34
 msgid "slug"
 msgstr ""
 
-#: core/models.py:27 core/models.py:69
+#: core/models.py:35 core/models.py:100
 msgid "name"
 msgstr ""
 
-#: core/models.py:44
+#: core/models.py:40 core/models.py:64
 msgid "category"
 msgstr ""
 
-#: core/models.py:45
+#: core/models.py:41
+msgid "categories"
+msgstr ""
+
+#: core/models.py:65
 msgid "author"
 msgstr ""
 
-#: core/models.py:46
+#: core/models.py:66
 msgid "hit_count_generic"
 msgstr ""
 
-#: core/models.py:47
+#: core/models.py:67
 msgid "media"
 msgstr ""
 
-#: core/models.py:48
-msgid "post date"
-msgstr ""
-
-#: core/models.py:51
+#: core/models.py:68
 msgid "title"
 msgstr ""
 
-#: core/models.py:52
+#: core/models.py:69
 msgid "content"
 msgstr ""
 
-#: core/models.py:53
+#: core/models.py:72
+msgid "post date"
+msgstr ""
+
+#: core/models.py:73
 msgid "post update"
 msgstr ""
 
-#: core/models.py:69 core/models.py:70
-msgid "Your email"
+#: core/models.py:79
+msgid "Post"
 msgstr ""
 
-#: core/models.py:70
+#: core/models.py:80
+msgid "posts"
+msgstr ""
+
+#: core/models.py:100
+msgid "Your name"
+msgstr ""
+
+#: core/models.py:101
 msgid "email"
 msgstr ""
 
-#: core/models.py:71
+#: core/models.py:101
+msgid "Your email"
+msgstr ""
+
+#: core/models.py:102
 msgid "body"
 msgstr ""
 
-#: core/models.py:71
+#: core/models.py:102
 msgid "Your comment"
 msgstr ""
 
-#: core/templates/blog/about.html:5 core/templates/blog/base.html:41
-#: core/templates/blog/base.html:108
+#: core/templates/blog/about.html:5 core/templates/blog/base.html:46
+#: core/templates/blog/base.html:130
 msgid "About me"
 msgstr ""
 
-#: core/templates/blog/base.html:27
+#: core/templates/blog/base.html:32
 msgid "Blog"
 msgstr ""
 
-#: core/templates/blog/base.html:34
+#: core/templates/blog/base.html:39
 msgid "Home"
 msgstr ""
 
-#: core/templates/blog/base.html:38 core/templates/blog/base.html:81
+#: core/templates/blog/base.html:43 core/templates/blog/base.html:103
 msgid "Categories"
 msgstr ""
 
-#: core/templates/blog/base.html:49
+#: core/templates/blog/base.html:54
 msgid "search"
 msgstr ""
 
-#: core/templates/blog/base.html:55
+#: core/templates/blog/base.html:64
+msgid "Languages"
+msgstr ""
+
+#: core/templates/blog/base.html:77
 msgid "New blog"
 msgstr ""
 
-#: core/templates/blog/base.html:56 core/templates/blog/new_category.html:7
+#: core/templates/blog/base.html:78 core/templates/blog/new_category.html:7
 msgid "New category"
 msgstr ""
 
-#: core/templates/blog/base.html:57
+#: core/templates/blog/base.html:79
 msgid "Control panel"
 msgstr ""
 
-#: core/templates/blog/base.html:58
+#: core/templates/blog/base.html:80
 msgid "Logout"
 msgstr ""
 
-#: core/templates/blog/base.html:62 user/templates/user/login.html:5
+#: core/templates/blog/base.html:84 user/templates/user/login.html:5
 #: user/templates/user/login.html:23
 msgid "Login"
 msgstr ""
 
-#: core/templates/blog/base.html:85
+#: core/templates/blog/base.html:107
 msgid "Latest posts"
 msgstr ""
 
-#: core/templates/blog/base.html:89
+#: core/templates/blog/base.html:111
 msgid "Latest comments"
 msgstr ""
 
-#: core/templates/blog/base.html:111
+#: core/templates/blog/base.html:133
 msgid "Blog logo"
 msgstr ""
 
-#: core/templates/blog/base.html:117
+#: core/templates/blog/base.html:139
 msgid "Important links"
 msgstr ""
 
-#: core/templates/blog/base.html:120
+#: core/templates/blog/base.html:142
 msgid "First link"
 msgstr ""
 
-#: core/templates/blog/base.html:121
+#: core/templates/blog/base.html:143
 msgid "Second link"
 msgstr ""
 
-#: core/templates/blog/base.html:122
+#: core/templates/blog/base.html:144
 msgid "Third link"
 msgstr ""
 
-#: core/templates/blog/base.html:123
+#: core/templates/blog/base.html:145
 msgid "Fourth link"
 msgstr ""
 
-#: core/templates/blog/base.html:124
+#: core/templates/blog/base.html:146
 msgid "Fifth link"
 msgstr ""
 
-#: core/templates/blog/base.html:129
+#: core/templates/blog/base.html:151
 msgid "Socials"
 msgstr ""
 
-#: core/templates/blog/base.html:144
+#: core/templates/blog/base.html:166
 msgid "All rights reserved"
 msgstr ""
 
@@ -332,6 +352,22 @@ msgstr ""
 
 #: core/templates/blog/search.html:43
 msgid "There are no blog posts matching your search results."
+msgstr ""
+
+#: translate/translate/lang/test_data.py:37
+msgid "Bokmål, Norwegian; Norwegian Bokmål"
+msgstr ""
+
+#: translate/translate/lang/test_data.py:38
+msgid "Spanish; Castillian"
+msgstr ""
+
+#: translate/translate/lang/test_data.py:39
+msgid "Mapudungun; Mapuche"
+msgstr ""
+
+#: translate/translate/lang/test_data.py:41
+msgid "Interlingua (International Auxiliary Language Association)"
 msgstr ""
 
 #: user/models.py:9

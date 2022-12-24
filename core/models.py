@@ -93,18 +93,28 @@ class Post(models.Model, metaclass=LinguistMeta):
         # return '/detail/{}'.format(self.pk)
         return reverse('detail', args=[self.pk])
 
-class Comment(models.Model):
+class Comment(models.Model, metaclass=LinguistMeta):
     post = models.ForeignKey(
-        Post, on_delete=models.CASCADE, related_name='comments')
+        Post, on_delete=models.CASCADE, related_name='comments', null=True)
 
-    name = models.CharField(_('name'),max_length=50, help_text=_('Your name'),)
+    name = models.CharField(_('name'),max_length=50, null=True, help_text=_('Your name'),)
     email = models.EmailField(_('email'), help_text=_('Your email'),)
-    body = models.TextField(_('body'), help_text=_('Your comment'),)
+    body = models.TextField(_('body'), null=True, help_text=_('Your comment'),)
     active = models.BooleanField(default=False)
     comment_date = models.DateTimeField(auto_now_add=True,)
+    lang = models.CharField(max_length=5, verbose_name="Default Language", default=LanguagesChoices.English, choices=LanguagesChoices.choices)
     
+    class Meta:
+        ordering = ('comment_date',)
+        verbose_name = _('Comment')
+        verbose_name_plural = _('comments')
+        linguist = {
+            'identifier': 'comment',
+            'fields': ('name', "body",),
+            'default_language': 'en',
+            'default_language_field': 'lang',
+            'decider': PostTranslation,
+        }
+
     def __str__(self):
         return 'commented {} on {}.'.format(self.name, self.post)
-
-    class Meta:
-        ordering = ('-comment_date',)

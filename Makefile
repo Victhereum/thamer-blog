@@ -79,7 +79,12 @@ test:
 update:
 	pip install -r requirements.txt
 
+translate:
+	python translator.py
+
 makemsg:
 	django-admin makemessages --all --ignore=venv
+
 compilemsg:
 	django-admin compilemessages --ignore=venv
+

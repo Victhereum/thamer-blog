@@ -18,4 +18,6 @@ class PostAdmin(TranslatableModelAdmin):
 
 
 # admin.site.register(Comment
-admin.site.register(Comment)
+@admin.register(Comment)
+class CommentAdmin(TranslatableModelAdmin):
+    list_display = ["name", "email", "post"]
