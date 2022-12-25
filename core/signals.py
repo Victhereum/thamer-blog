@@ -16,7 +16,7 @@ def translate_new_post(sender, instance, created, **kwargs):
         if instance.lang == LanguagesChoices.English:
         # Translate the title and content
             title = translator_function(str(instance.title), source_code="en", target_code="ar")
-            content = translator_function(str(instance.body), source_code="en", target_code="ar")
+            content = translator_function(str(instance.content), source_code="en", target_code="ar")
 
             # add them to the arabic virtual_instance of the
             instance.title_ar = title
@@ -24,7 +24,7 @@ def translate_new_post(sender, instance, created, **kwargs):
         else:
         # Translate the title and content
             title = translator_function(str(instance.title), source_code="ar", target_code="en")
-            content = translator_function(str(instance.body), source_code="ar", target_code="en")
+            content = translator_function(str(instance.content), source_code="ar", target_code="en")
 
             # add them to the arabic virtual_instance of the
             instance.title_en = title
